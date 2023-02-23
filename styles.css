@@ -1,0 +1,158 @@
+/*-------------------------------- RESET -----------------------------------*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root {
+    /*only with frameworks: adjuste to match the framework*/
+    isolation: isolate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    ::before,
+    ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*---------------------- END RESET -----------------------*/
+
+/*------------------- To work with rem more easy---------------------*/
+
+:root {
+    font-size: 62.5%;
+    /* Primary */
+
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+
+    /*(background)*/
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+    /*(circle)*/
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* #Neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/*----------------------------------------------------------------*/
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.main{
+    height: 100%;
+}
+
+.result {
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 44%;
+}
+
+.result__title {
+    color: hsla(0, 0%, 85%, 1);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 25px 0;
+}
+
+.score-container {
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.score-container__score {
+    color: var(--white);
+    font-size: 5.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.score-container__max-score {
+    color: var(--light-lavender);
+    font-weight: 700;
+    opacity: 0.52;
+    font-size: 1.6rem;
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
