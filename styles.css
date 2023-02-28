@@ -101,7 +101,7 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.main{
+.main {
     height: 100%;
 }
 
@@ -118,6 +118,16 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
     margin: 25px 0;
+}
+
+.result__subtitle {
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+.result__description {
+    color: hsla(0, 0%, 85%, 1);
+    font-size: 1.6rem;
 }
 
 .score-container {
