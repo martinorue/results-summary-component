@@ -24,7 +24,6 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
     max-width: 100%;
 }
 
@@ -93,6 +92,8 @@ h6 {
     --pale-blue: hsl(221, 100%, 96%);
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
+    --dark-navy: hsla(223, 30%, 27%, 1);
+
 }
 
 /*----------------------------------------------------------------*/
@@ -110,7 +111,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 44%;
+    height: 55%;
+    border-radius: 0 0 32px 32px;
 }
 
 .result__title {
@@ -123,11 +125,14 @@ body {
 .result__subtitle {
     color: var(--white);
     font-size: 2.4rem;
+    margin: 15px 0;
 }
 
 .result__description {
     color: hsla(0, 0%, 85%, 1);
     font-size: 1.6rem;
+    margin: 0px 40px;
+    text-align: center;
 }
 
 .score-container {
@@ -155,7 +160,92 @@ body {
     font-size: 1.6rem;
 }
 
+.summary {
+    display: flex;
+    flex-direction: column;
+}
 
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.summary__title {
+    font-size: 1.8rem;
+    color: var(--dark-navy);
+    margin: 25px 20px;
+}
+
+.summary__left {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.summary__left img {
+    align-self: baseline;
+}
+
+.summary__right {}
+
+.summary__skill {
+    display: flex;
+    align-items: end;
+    width: 50%;
+    font-size: 1.6rem;
+    width: 84%;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+}
+
+.summary__skill__name--reaction {
+    color: var(--light-red);
+}
+
+.summary__skill__name--memory {
+    color: var(--orangey-yellow);
+}
+
+.summary__skill__name--verbal {
+    color: var(--green-teal);
+}
+
+.summary__skill__name--visual {
+    color: var(--cobalt-blue)
+}
+
+.summary__right {
+    color: var(--dark-navy);
+    font-weight: 800;
+    /* color: hsla(223, 30%, 27%, 0.5); */
+}
+
+
+.summary__skill--reaction {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+}
+
+.summary__skill--memory {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+}
+
+.summary__skill--verbal {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+}
+
+.summary__skill--visual {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+}
+
+.of-100 {
+    opacity: 0.5;
+    margin-left: 4px;
+}
 
 
 .attribution {
