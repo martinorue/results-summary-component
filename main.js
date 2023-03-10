@@ -1,4 +1,16 @@
-function getData() {
+function animateCounter() {
+    const counterElement = document.getElementById('counter');
+    let count = 0;
+    const intervalId = setInterval(() => {
+        count++;
+        counterElement.textContent = count;
+        if (count === 76) {
+            clearInterval(intervalId);
+        }
+    }, 5);
+}
+
+function getSkillsData() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
@@ -61,5 +73,9 @@ function getData() {
         .catch(error => console.error(error));
 }
 
+function getData() {
+    animateCounter();
+    getSkillsData();
+}
 
-document.addEventListener('DOMContentLoaded', getData)
+document.addEventListener('DOMContentLoaded', getData);
