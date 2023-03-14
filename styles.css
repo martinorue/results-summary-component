@@ -201,8 +201,6 @@ body {
     align-self: baseline;
 }
 
-.summary__right {}
-
 .summary__skill {
     display: flex;
     align-items: end;
@@ -233,7 +231,6 @@ body {
 .summary__right {
     color: var(--dark-navy);
     font-weight: 800;
-    /* color: hsla(223, 30%, 27%, 0.5); */
 }
 
 
@@ -318,14 +315,3 @@ body {
         font-size: 1.8 rem;
     }
 }
-
-
-/* .attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    top: 0;
-    color: hsl(228, 45%, 44%);
-} */
