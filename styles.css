@@ -197,10 +197,6 @@ body {
     gap: 10px
 }
 
-.summary__left img {
-    align-self: baseline;
-}
-
 .summary__skill {
     display: flex;
     align-items: end;
